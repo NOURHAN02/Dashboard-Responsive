@@ -1,3 +1,4 @@
+import 'package:dashboard_responsive/utils/colors.dart';
 import 'package:dashboard_responsive/view/dashboard_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(),
+      theme: ThemeData(scaffoldBackgroundColor: AppColor.backgroundColor),
       home: const DashboardView(),
     );
   }

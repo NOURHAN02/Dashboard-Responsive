@@ -1,5 +1,5 @@
 import 'package:dashboard_responsive/widgets/all_expenses_list.dart';
-import 'package:dashboard_responsive/widgets/title_expenses.dart';
+import 'package:dashboard_responsive/widgets/customer_header_drop.dart';
 import 'package:flutter/material.dart';
 
 class AllExpenses extends StatelessWidget {
@@ -7,22 +7,19 @@ class AllExpenses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(top: 20.0),
-      child: Container(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(15.0),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(15.0),
-          child: Column(
-            children: [
-              TitleExpenses(),
-              const SizedBox(height: 16),
-              AllExpensesList(),
-            ],
-          ),
+    return Container(
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(15.0),
+      ),
+      child: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          children: [
+            TitleExpenses(title: "All Expenses",),
+            const SizedBox(height: 16),
+            AllExpensesList(),
+          ],
         ),
       ),
     );

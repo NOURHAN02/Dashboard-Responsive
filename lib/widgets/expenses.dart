@@ -7,10 +7,13 @@ class Expenses extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [AllExpenses(), const SizedBox(height: 24), QuickInvoice()],
-      ),
+    return Column(
+      children: [
+        AllExpenses(),
+        const SizedBox(height: 24),
+        QuickInvoice(),
+        const SizedBox(height: 24),
+      ],
     );
   }
 }

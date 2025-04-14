@@ -3,13 +3,13 @@ import 'package:dashboard_responsive/utils/styles.dart';
 import 'package:flutter/material.dart';
 
 class TitleExpenses extends StatelessWidget {
-  const TitleExpenses({super.key});
-
+  const TitleExpenses({super.key, required this.title});
+final String title;
   @override
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Text("All Expenses", style: AppStyles.styleSemiBold20(context)),
+        Text(title, style: AppStyles.styleSemiBold20(context)),
         Expanded(child: SizedBox()),
         Container(
           padding: EdgeInsets.all(8.0),

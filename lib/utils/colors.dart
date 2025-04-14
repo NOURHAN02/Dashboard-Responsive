@@ -10,5 +10,7 @@ class AppColor {
   static const primarySemiColor = Color(0xff208CC8);
   static const blackColor = Color(0xff292D32);
   static const grayColor = Color(0xffF1F1F1);
+  static const graysemiColor = Color(0xffE8E8E8);
   static const backgroundColor = Color(0xffE5E5E5);
+  static const whiteChartColor = Color(0xffE2DECD);
 }

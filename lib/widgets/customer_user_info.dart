@@ -14,8 +14,11 @@ class CustomerUserInfo extends StatelessWidget {
       elevation: 0,
       child: ListTile(
         leading: SvgPicture.asset(userInfo.image),
-        //leading: SvgPicture.asset(userInfo.image),
-        title: Text(userInfo.name, style: AppStyles.styleSemiBold16(context)),
+        title: FittedBox(
+          fit: BoxFit.scaleDown,
+          alignment: Alignment.centerLeft,
+          child: Text(userInfo.name, style: AppStyles.styleSemiBold16(context)),
+        ),
         subtitle: Text(
           userInfo.email,
           style: AppStyles.styleRegular12(context),

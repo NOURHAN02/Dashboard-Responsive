@@ -1,5 +1,6 @@
 import 'package:dashboard_responsive/widgets/desktop_lauout.dart';
-import 'package:dashboard_responsive/widgets/text_color_widget.dart';
+import 'package:dashboard_responsive/widgets/mobile_layout.dart';
+import 'package:dashboard_responsive/widgets/tablet_layout.dart';
 import 'package:flutter/material.dart';
 
 class AdaptiveLayoutWidget extends StatelessWidget {
@@ -10,9 +11,9 @@ class AdaptiveLayoutWidget extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth < 800) {
-          return TextColor(text: "mobile");
+          return MobileLayout();
         } else if (constraints.maxWidth < 1200) {
-          return TextColor(text: "tablets");
+          return TabletLayout();
         } else {
           return DesktopLauout();
         }

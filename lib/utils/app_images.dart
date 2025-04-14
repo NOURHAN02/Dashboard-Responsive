@@ -5,7 +5,8 @@ class ImageConstant {
   static const String avater3 = "assets/images/user_animation_three.svg";
   static const String imagesBalance = "assets/images/moneys.svg";
 
-  static const String imagesCardBackground = "assets/images/Mask group.svg";
+  static const String imagesCardBackground = "assets/images/Mask group.png";
+ 
 
   static const String imagesDashboard = "assets/images/category-2.svg";
 
